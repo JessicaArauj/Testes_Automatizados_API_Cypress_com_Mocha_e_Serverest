@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-18T08:36:11.533Z",
+    "end": "2023-04-18T08:36:11.777Z",
+    "duration": 244,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "844f806c-7d6d-431c-933c-2684c0b199b0",
+      "title": "",
+      "fullFile": "cypress/integration/usuarios.spec.js",
+      "file": "cypress/integration/usuarios.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5515e16a-9d67-42c5-beeb-76f2793ec3bb",
+          "title": "Deve listar usuários cadastrados",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve validar contrato de usuarios",
+              "fullTitle": "Deve listar usuários cadastrados Deve validar contrato de usuarios",
+              "timedOut": null,
+              "duration": 214,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('produtos').then(response => {\n  return _usuarios.default.validateAsync(response.body);\n});",
+              "err": {
+                "message": "ValidationError: \"produtos\" is not allowed",
+                "estack": "ValidationError: \"produtos\" is not allowed",
+                "diff": null
+              },
+              "uuid": "eb2ea846-b781-4903-a4fe-c66a39227318",
+              "parentUUID": "5515e16a-9d67-42c5-beeb-76f2793ec3bb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "eb2ea846-b781-4903-a4fe-c66a39227318"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 214,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
