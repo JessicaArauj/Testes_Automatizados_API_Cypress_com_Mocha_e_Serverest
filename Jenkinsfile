@@ -8,6 +8,7 @@ pipeline {
             }
         }
     }
+    
     stages {
         stage('Instalar dependências') {
             steps {
@@ -15,6 +16,15 @@ pipeline {
             }
         }
     }
+    
+    stages {
+        stage('Iniciar o servidor') {
+            steps {
+                sh 'npm start'
+            }
+        }
+    }
+    
     stages {
         stage('Execução dos testes') {
             steps {
